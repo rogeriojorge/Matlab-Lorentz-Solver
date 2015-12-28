@@ -1,0 +1,7 @@
+\contentsline {section}{Introduction}{3}{section*.2}
+\contentsline {section}{Matlab Numerical Code}{3}{section*.3}
+\contentsline {section}{Diagnostics}{4}{section*.4}
+\contentsline {subsection}{Code Verification}{4}{section*.5}
+\contentsline {subsection}{Differential Solver Comparison}{5}{section*.6}
+\contentsline {subsection}{Particle Drifts}{5}{section*.7}
+\contentsline {section}{Conclusion}{5}{section*.8}
