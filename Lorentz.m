@@ -20,7 +20,7 @@ if testmode == 0
     solver = input('Solver: 1 for RK4, 2 for Euler - ');
     plane = input('Plane: 1 for xy, 2 for xz, 3 for yz, 4 for xyz - ');
     nstep = input('Number of time steps - ');
-    v_video = input('Write video: 1 for yes, 0 for no');
+    v_video = input('Write video: 1 for yes, 0 for no - ');
 
     if solver==1
         ssolver='RK4';
