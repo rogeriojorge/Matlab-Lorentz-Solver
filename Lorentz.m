@@ -20,6 +20,7 @@ if testmode == 0
     solver = input('Solver: 1 for RK4, 2 for Euler - ');
     plane = input('Plane: 1 for xy, 2 for xz, 3 for yz, 4 for xyz - ');
     nstep = input('Number of time steps - ');
+    v_video = input('Write video: 1 for yes, 0 for no - ');
 
     if solver==1
         ssolver='RK4';
@@ -50,8 +51,9 @@ if testmode == 0
     xmax=1.5*L;xmin=-xmax;ymax=xmax;ymin=xmin;zmax=xmax;zmin=xmin;
     
     [pos,~,traj,~]=Lorentz_main(np,bfunc,E,nstep,solver,ssolver,dt,q_over_m,vth,L,dimensions,bbfunc);
-    Lorentz_video(ssolver,bbfunc,traj,T,np,nstep,xmax,xmin,ymax,ymin,zmax,zmin,dimensions,pos,E);
-    
+    if v_video==1
+        Lorentz_video(ssolver,bbfunc,traj,T,np,nstep,xmax,xmin,ymax,ymin,zmax,zmin,dimensions,pos,E);
+    end
 elseif testmode == 1
     np = 10;
     T = 1000;
